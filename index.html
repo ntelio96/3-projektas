@@ -5,46 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mergaite</title>
-</head>
-<body style="background-color:floralwhite">     
-    <div style="width: 800px; text-align: right; display: inline-block; margin-left: calc((100% - 800px) / 2);">
-        <div style="display: inline-block; float: left;">
-            <a href="/">
-                <img class="navbar-brand" src="cia bus logo" alt="Home">
-            </a>
-        </div>
-        <div style="display: inline-block;
-             margin-right: 3%;">
-            <a href="#">Home</a>
-        </div>
-        <div style="display: inline-block;
-            margin-right: 3%;">
-            <a href="#">Tracks</a>
-        </div>
-        <div style="display: inline-block;
-            margin-right: 3%;">
-            <a href="#">Library</a>
-        </div>
-        <div style="display: inline-block;
-            margin-right: 3%;">
-            <a href="#">Community</a>
-        </div>
-        <div style="display: inline-block;
-            text-transform: uppercase;
-            padding: 1%;
-            background-color: lightgrey;
-            margin-right: 3%;">
-            <a href="#">Sign In</a>
-        </div>
-        
-        <div style="display: inline-block;
-            float: right;">
-            <img src="./pictures/Capture.PNG" alt="#">
-        </div>
-        <p style="font-size: 75px; text-align: center;">404</p>
-        <p style="font-size: 24px; ; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam exercitationem fugit illum.</p>
+    <style>
+        body {
+
+        }
+        main {
+            width: 800px; 
+            display: inline-block;
+            margin-left: calc((100% - 800px) / 2);
+            } 
+        header {
+            display: inline-block;
+            width: 100%;
+            font-size: 18px;
+            margin-top: 20px;
+           
+        }
+
+        img {
+            float: left;
+            height: 50px;}
+
+        nav {
+            float: right;
+            margin-top: 15px;
             
-    </div>
+            }
+
+        a {text-decoration: none;
+            color: #9E9E9E;  font-size: 20px;  
+            line-height: 20px;  
+            margin-left: 30px;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+    </style>
+</head>
+<body >  
+    <Main>
+        <header style="float: left;">      
+        <a href="/">
+            <img class="navbar-brand" src="./pictures/logo.png" alt="logo">
+        </a>
+        
+            <nav style="float:right">
+            
+                <a style="margin: 0;"href="#">Home</a>
+           
+                <a href="#">Tracks</a>
+            
+                <a href="#">Library</a>
+            
+                <a href="#">Community</a>
+            
+                <a href="#">Sign In</a>
+            
+            </nav>   
+        </header> 
+        
+        <section>  
+            <div>
+                <h1>404</h1>
+                <p style=> The link is broken or the page has been moved.</p>
+            <img src="./pictures/Capture.PNG" alt="#">
+            </div>
+        </section>
+    
+    </Main>        
+    
 </body>
 </html>
 
