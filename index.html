@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mergaite</title>
     <style>
-        body {
-
-        }
+        
         main {
             width: 800px; 
             display: inline-block;
@@ -22,7 +20,7 @@
            
         }
 
-        img {
+        header>img {
             float: left;
             height: 50px;}
 
@@ -32,9 +30,12 @@
             
             }
 
-        a {text-decoration: none;
+        a { text-decoration: none;
             color: #9E9E9E;  font-size: 20px;  
             line-height: 20px;  
+            
+        }
+        a+a {
             margin-left: 30px;
         }
 
@@ -42,18 +43,45 @@
             color:#8ac069;
         }
 
+        section > img {
+            width: 40%;
+            float: right;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+       
+        section {
+            display: inline-block;
+            width: 100%;
+        }
+        div {
+           margin-top: 40px;
+            width: 46%;
+            float: left;
+            color: #9E9E9E;
+        }
+        h1 { 
+            margin: 0;
+            font-size: 50px;
+        }
+        
+        p {
+            margin: 0;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body >  
     <Main>
         <header style="float: left;">      
-        <a href="/">
-            <img class="navbar-brand" src="./pictures/logo.png" alt="logo">
-        </a>
+            <a href="/">
+                <img class="navbar-brand" src="./pictures/logo.png" alt="logo">
+            </a>
         
-            <nav style="float:right">
+            <nav>
             
-                <a style="margin: 0;"href="#">Home</a>
+                <a href="#">Home</a>
            
                 <a href="#">Tracks</a>
             
@@ -70,8 +98,8 @@
             <div>
                 <h1>404</h1>
                 <p style=> The link is broken or the page has been moved.</p>
-            <img src="./pictures/Capture.PNG" alt="#">
             </div>
+            <img src="./pictures/Capture.PNG" alt="#">
         </section>
     
     </Main>        
@@ -84,6 +112,21 @@
 
 
 <!--
-kaip apdaryti, kad pvz imagine stovetu vietoje, o turinys keistusi
+kaip apdaryti, kad pvz imagine stovetu vietoje, o turinys keistusi.
+ galima rasyti section>img kad visus img tevo elemente pakeistume, bet
+ galim ir pvz daryt main>header>img tai gausis visi img pasikeis main
+ elemente.
+ su kableliu pvz h1,p {} selectins visus irasytus elementus
+ taip pat galima section div {} parinks visus div elementus tame sectione
+ ar main img{}.
+ su > varnele yra grieztas elementas, be varneles kaip rasom pvz main img{}
+ yra megrieztas ir bus panaudojamas viskam tame seimos medyje.
+ p+p ar h1+p tiesiog praleidzia pirma elementa ir pakeicia visus toliau einancius 
+ siuo atveju p elementus.
+
+ Floating elementas ismeta teva is aukscio ir nebeleidzia nustatyt
+ kai kuriu elementu, kaip background color. Fixas tiesiog tevui in line block
+ duoti, kad atgautu auksti.
+
 
 -->
