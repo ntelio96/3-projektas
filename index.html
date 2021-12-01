@@ -31,12 +31,20 @@
             }
 
         a { text-decoration: none;
-            color: #9E9E9E;  font-size: 20px;  
+            color: #9E9E9E;  
+            font-size: 20px;  
             line-height: 20px;  
+            padding-top: 5px;   
+            padding-bottom: 5px;
+            padding-right: 20px;
+            padding-left: 20px;
+            border: 3px solid transparent;
+            border-radius: 20px;
+
             
         }
         a+a {
-            margin-left: 30px;
+            margin-left: 1px;
         }
 
         a:hover {
@@ -44,7 +52,7 @@
         }
 
         section > img {
-            width: 40%;
+            width: 50%;
             float: right;
             margin-left: 5%;
             margin-right: 5%;
@@ -57,7 +65,7 @@
         }
         div {
            margin-top: 40px;
-            width: 46%;
+            width: 40%;
             float: left;
             color: #9E9E9E;
         }
@@ -75,10 +83,8 @@
 <body >  
     <Main>
         <header style="float: left;">      
-            <a href="/">
-                <img class="navbar-brand" src="./pictures/logo.png" alt="logo">
-            </a>
-        
+            <img src="./pictures/logo.png" alt="logo">
+            
             <nav>
             
                 <a href="#">Home</a>
@@ -89,7 +95,7 @@
             
                 <a href="#">Community</a>
             
-                <a href="#">Sign In</a>
+                <a href="#" style="border-color: #9E9E9E; margin-left: 25px;" >Sign In</a>
             
             </nav>   
         </header> 
@@ -127,6 +133,10 @@ kaip apdaryti, kad pvz imagine stovetu vietoje, o turinys keistusi.
  Floating elementas ismeta teva is aukscio ir nebeleidzia nustatyt
  kai kuriu elementu, kaip background color. Fixas tiesiog tevui in line block
  duoti, kad atgautu auksti.
+
+ border radius su % reali israiska veikai tik 0 - 50%
+ border radius su pixeliais sukuria kitokia figura, kaip pas mus.
+ reali reiksme keicias
 
 
 -->
